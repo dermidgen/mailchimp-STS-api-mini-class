@@ -90,7 +90,7 @@ class MCAPI {
             ini_set("arg_separator.output", $orig_sep);
         }
         
-        $payload = "POST " . $this->apiUrl["path"] . "/" . $method . ".php/?" . $this->apiUrl["query"] . " HTTP/1.0\r\n";
+        $payload = "POST " . $this->apiUrl["path"] . $method . ".php/?" . $this->apiUrl["query"] . " HTTP/1.0\r\n";
         $payload .= "Host: " . $host . "\r\n";
         $payload .= "User-Agent: MCAPImini/" . $this->version ."\r\n";
         $payload .= "Content-type: application/x-www-form-urlencoded\r\n";
