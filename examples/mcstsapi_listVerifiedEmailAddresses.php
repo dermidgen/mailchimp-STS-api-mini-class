@@ -5,7 +5,7 @@ This Example shows how to create a basic campaign via the MCAPI class.
 require_once 'inc/MCSTSAPI.class.php';
 require_once 'inc/config.inc.php'; //contains apikey
 
-$api = new MCAPI($apikey);
+$api = new MCSTSAPI($apikey);
 
 $retval = $api->listVerifiedEmailAddresses();
 
